@@ -18,4 +18,7 @@ Route::get('/', function () {
 Route::post('login', 'TokenController@login');
 Route::post('register', 'TokenController@register');
 
-Route::resource('question', 'QuestionController', ['only' => ['index', 'store']]);
+Route::post('question/answer', 'QuestionController@answerIt');
+Route::resource('question', 'QuestionController', ['only' => ['index', 'store', 'show']]);
+
+Route::post('radius', 'GeoController@inRadius');

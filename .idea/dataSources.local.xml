@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="MySQL - geo@localhost" uuid="c955ddd9-40c1-4462-87c9-b53ce536c694">
+    <data-source name="MySQL - geo@localhost" uuid="b7f7fa87-bcd6-40eb-94aa-0ef4c5719ccc">
       <secret-storage>master_key</secret-storage>
       <user-name>root</user-name>
       <schema-pattern>geo.*</schema-pattern>

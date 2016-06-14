@@ -33,4 +33,17 @@ class GeoCalculator
             cos($this->currentLat) * cos($lat) *
             cos($this->currentLon - $long)) * $this->radius, 2);
     }
+
+    /**
+     * Determinate if target is within a given radius.
+     *
+     * @param $lat
+     * @param $long
+     * @param $radius
+     * @return bool
+     */
+    public function inRadius($lat, $long, $radius)
+    {
+        return $this->distanceTo($lat, $long) <= $radius;
+    }
 }

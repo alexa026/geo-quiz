@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Question;
+use App\User;
 use Illuminate\Http\Request;
 
 use JWTAuth;
@@ -31,9 +32,14 @@ class QuestionController extends Controller
      */
     public function store(Request $request)
     {
-        $data = $request->only('question', 'latitude', 'longitude', 'points');
+        $data = $request->only('question', 'latitude', 'longitude', 'points', 'answer');
 
-        $user = JWTAuth::parseToken()->authenticate();
+        $data['answer'] = strtolower('answer');
+
+        if (!$user = JWTAuth::parseToken()->authenticate()) {
+            return response()->json(['user_not_found'], 404);
+        }
+
         $user->decreasePoints($data['points']);
 
         $q = $user->questions()->create($data);
@@ -48,40 +54,47 @@ class QuestionController extends Controller
      */
     public function show($id)
     {
-        //
+        $question = Question::findOrFail($id);
+        return $question;
     }
 
     /**
-     * Show the form for editing the specified resource.
+     * Try to answer question.
      *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse|int|mixed
      */
-    public function edit($id)
+    public function answerIt(Request $request)
     {
-        //
+        $data = $request->only('id', 'answer');
+        $data['answer'] = strtolower($data['answer']);
+
+        if (! $user = JWTAuth::parseToken()->authenticate()) {
+            return response()->json(['user_not_found'], 404);
+        }
+        $question = Question::findOrFail($data['id']);
+        
+        $result = $question->checkAnswer($data['answer']);
+        
+        return !$result ? -1 : $this->calculatePoints($user, $question->user, $question);
     }
 
     /**
-     * Update the specified resource in storage.
+     * Exchange points in case that question is answered.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @param User $user_answered
+     * @param User $user_owner
+     * @param Question $question
+     * @return mixed
      */
-    public function update(Request $request, $id)
+    public function calculatePoints(User $user_answered, User $user_owner, Question $question)
     {
-        //
-    }
+        $points = $question->points;
+        $user_owner->decreasePoints($points);
+        $user_answered->increasePoints($points);
+        $question->answered = true;
+        $question->save();
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
+        return $points;
     }
 }
