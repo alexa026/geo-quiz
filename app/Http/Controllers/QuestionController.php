@@ -91,6 +91,10 @@ class QuestionController extends Controller
     {
         $points = $question->points;
         $user_owner->decreasePoints($points);
+
+        if ($user_owner->isFriendWith($user_answered->id))
+            $points *= $points;
+
         $user_answered->increasePoints($points);
         $question->answered = true;
         $question->save();

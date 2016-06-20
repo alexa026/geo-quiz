@@ -47,6 +47,17 @@ class User extends Authenticatable
     }
 
     /**
+     * Check if 2 users are friends.
+     * 
+     * @param $id
+     * @return mixed
+     */
+    public function isFriendWith($id)
+    {
+        return $this->friends->contains($id);
+    }
+
+    /**
      * Returns questions associated with user.
      *
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
@@ -54,5 +65,15 @@ class User extends Authenticatable
     public function questions()
     {
         return $this->hasMany('App\Question');
+    }
+
+    /**
+     * Returns user's friends list.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
+     */
+    public function friends()
+    {
+        return $this->belongsToMany('App\User', 'friends_list', 'user1_id', 'user2_id');
     }
 }
