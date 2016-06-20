@@ -15,9 +15,10 @@ Route::post('login', 'TokenController@login');
 Route::post('register', 'TokenController@register');
 
 Route::post('question/answer', 'QuestionController@answerIt');
+Route::post('question/radius', 'GeoController@inRadius');
+
 Route::resource('question', 'QuestionController', ['only' => ['index', 'store', 'show']]);
 
-Route::post('radius', 'GeoController@inRadius');
-
+Route::get('user/{id}', 'UsersController@show');
 Route::get('user/{id}/friends', 'FriendsController@ofUser');
 Route::post('user/friends', 'FriendsController@addFriendship');

@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d0e4114-56ce-46bd-afce-acf44c16c4e2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/QuestionController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/QuestionController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/User.php" afterPath="$PROJECT_DIR$/app/User.php" />
     </list>
     <ignored path="geo-quiz.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,13 +56,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="QuestionController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/QuestionController.php">
+      <file leaf-file-name="UsersController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UsersController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="625">
-              <caret line="97" column="29" selection-start-line="97" selection-start-column="29" selection-end-line="97" selection-end-column="29" />
+            <state relative-caret-position="656">
+              <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
               <folding>
-                <element signature="e#40#57#0#PHP" expanded="true" />
+                <element signature="e#40#53#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -93,10 +90,11 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/GeoController.php" />
         <option value="$PROJECT_DIR$/app/Question.php" />
         <option value="$PROJECT_DIR$/database/migrations/2016_06_20_132112_add_friends_table.php" />
-        <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/FriendsController.php" />
         <option value="$PROJECT_DIR$/app/User.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/QuestionController.php" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" />
       </list>
     </option>
   </component>
@@ -111,7 +109,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="y" value="24" />
+    <option name="y" value="94" />
     <option name="width" value="1680" />
     <option name="height" value="952" />
   </component>
@@ -219,21 +217,22 @@
       <workItem from="1465472422991" duration="6132000" />
       <workItem from="1465921225914" duration="5254000" />
       <workItem from="1466097590462" duration="173000" />
-      <workItem from="1466428811301" duration="2079000" />
+      <workItem from="1466428811301" duration="2178000" />
+      <workItem from="1466434688007" duration="1807000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13638000" />
+    <option name="totallyTimeSpent" value="15544000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="24" width="1680" height="952" extended-state="6" />
+    <frame x="0" y="94" width="1680" height="952" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14404762" sideWeight="0.49190938" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.30952382" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="1094" y="171" width="510" height="803" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.30952382" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="1090" y="142" width="520" height="833" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -267,6 +266,29 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/QuestionController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3403">
+          <caret line="88" column="7" selection-start-line="88" selection-start-column="7" selection-end-line="88" selection-end-column="7" />
+          <folding>
+            <marker date="1466436556942" expanded="true" signature="44:137" ph="..." />
+            <marker date="1466436556942" expanded="true" signature="182:2572" ph="{...}" />
+            <marker date="1466436556942" expanded="true" signature="192:288" ph=" Display a listing of the resource. ..." />
+            <marker date="1466436556942" expanded="true" signature="318:440" ph="{...}" />
+            <marker date="1466436556942" expanded="true" signature="449:603" ph=" Store a newly created resource in storage. ..." />
+            <marker date="1466436556942" expanded="true" signature="649:1051" ph="{...}" />
+            <marker date="1466436556942" expanded="true" signature="856:927" ph="..." />
+            <marker date="1466436556942" expanded="true" signature="1060:1177" ph=" Display the specified resource. ..." />
+            <marker date="1466436556942" expanded="true" signature="1209:1294" ph="{...}" />
+            <marker date="1466436556942" expanded="true" signature="1303:1433" ph=" Try to answer question. ..." />
+            <marker date="1466436556942" expanded="true" signature="1482:1955" ph="{...}" />
+            <marker date="1466436556942" expanded="true" signature="1655:1726" ph="..." />
+            <marker date="1466436556942" expanded="true" signature="1964:2154" ph=" Exchange points in case that question is answered. ..." />
+            <marker date="1466436556942" expanded="true" signature="2251:2570" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/GeoController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="697">
@@ -314,10 +336,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="246">
           <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-          <folding>
-            <marker date="1465226328000" expanded="false" signature="50:447" ph="..." />
-            <marker date="1465226328000" expanded="true" signature="568:629" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -360,7 +378,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="19" column="50" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1005,13 +1022,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/TokenController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="45" column="7" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2016_06_14_171707_add_answered_field.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="410">
@@ -1023,22 +1033,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="123">
           <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Question.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
-          <folding>
-            <marker date="1465924862091" expanded="true" signature="92:766" ph="{...}" />
-            <marker date="1465924862091" expanded="true" signature="200:292" ph=" The attributes that should be casted to native types. ..." />
-            <marker date="1465924862091" expanded="true" signature="319:357" ph="..." />
-            <marker date="1465924862091" expanded="true" signature="372:462" ph=" Check if answer is correct. ..." />
-            <marker date="1465924862091" expanded="true" signature="505:558" ph="{...}" />
-            <marker date="1465924862091" expanded="true" signature="567:678" ph=" Returns associated user. ..." />
-            <marker date="1465924862091" expanded="true" signature="707:764" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1073,37 +1067,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/GeoController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9">
-          <caret line="23" column="60" selection-start-line="23" selection-start-column="60" selection-end-line="23" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2016_06_20_132112_add_friends_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="410">
           <caret line="14" column="36" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="36" />
-          <folding>
-            <marker date="1466428956732" expanded="false" signature="11:94" ph="..." />
-            <marker date="1466428956732" expanded="true" signature="135:748" ph="{...}" />
-            <marker date="1466428956732" expanded="true" signature="145:205" ph=" Run the migrations. ..." />
-            <marker date="1466428956732" expanded="true" signature="232:594" ph="{...}" />
-            <marker date="1466428956732" expanded="true" signature="262:586" ph="..." />
-            <marker date="1466428956732" expanded="true" signature="307:585" ph="..." />
-            <marker date="1466428956732" expanded="true" signature="603:667" ph=" Reverse the migrations. ..." />
-            <marker date="1466428956732" expanded="true" signature="696:746" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
-          <folding>
-            <marker date="1466430033729" expanded="false" signature="9:390" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1111,27 +1078,11 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/FriendsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
-          <folding>
-            <marker date="1466430426715" expanded="true" signature="44:106" ph="..." />
-            <marker date="1466430426715" expanded="true" signature="150:843" ph="{...}" />
-            <marker date="1466430426715" expanded="true" signature="160:244" ph=" Return friends of user. ..." />
-            <marker date="1466430426715" expanded="true" signature="278:369" ph="{...}" />
-            <marker date="1466430426715" expanded="true" signature="378:453" ph=" Add a friendship route. ..." />
-            <marker date="1466430426715" expanded="true" signature="507:841" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1159,12 +1110,145 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/GeoController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-120">
+          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+          <folding>
+            <marker date="1465924795302" expanded="false" signature="44:145" ph="..." />
+            <marker date="1465924795302" expanded="true" signature="185:1060" ph="{...}" />
+            <marker date="1465924795302" expanded="true" signature="195:301" ph=" Return questions within a radius. ..." />
+            <marker date="1465924795302" expanded="true" signature="350:1058" ph="{...}" />
+            <marker date="1465924795302" expanded="true" signature="671:684" ph="..." />
+            <marker date="1465924795302" expanded="true" signature="841:1012" ph="..." />
+            <marker date="1465924795302" expanded="true" signature="899:1011" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/routing/Tests/Loader/ObjectRouteLoaderTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+          <folding>
+            <marker date="1464591507000" expanded="false" signature="9:234" ph="..." />
+            <marker date="1464591507000" expanded="false" signature="293:428" ph="..." />
+            <marker date="1464591507000" expanded="true" signature="493:2797" ph="{...}" />
+            <marker date="1464591507000" expanded="true" signature="558:1201" ph="{...}" />
+            <marker date="1464591507000" expanded="true" signature="808:891" ph="..." />
+            <marker date="1464591507000" expanded="true" signature="933:1016" ph="..." />
+            <marker date="1464591507000" expanded="true" signature="1210:1311" ph=" @expectedException \InvalidArgumentException ..." />
+            <marker date="1464591507000" expanded="true" signature="1377:1479" ph="{...}" />
+            <marker date="1464591507000" expanded="true" signature="1524:1660" ph="{...}" />
+            <marker date="1464591507000" expanded="true" signature="1552:1652" ph="..." />
+            <marker date="1464591507000" expanded="true" signature="1669:1717" ph=" @expectedException \LogicException ..." />
+            <marker date="1464591507000" expanded="true" signature="1773:1948" ph="{...}" />
+            <marker date="1464591507000" expanded="true" signature="1957:2013" ph=" @expectedException \BadMethodCallException ..." />
+            <marker date="1464591507000" expanded="true" signature="2062:2237" ph="{...}" />
+            <marker date="1464591507000" expanded="true" signature="2246:2294" ph=" @expectedException \LogicException ..." />
+            <marker date="1464591507000" expanded="true" signature="2362:2795" ph="{...}" />
+            <marker date="1464591507000" expanded="true" signature="2447:2466" ph="..." />
+            <marker date="1464591507000" expanded="true" signature="2555:2567" ph="..." />
+            <marker date="1464591507000" expanded="true" signature="2588:2626" ph="..." />
+            <marker date="1464591507000" expanded="true" signature="2855:3026" ph="{...}" />
+            <marker date="1464591507000" expanded="true" signature="2936:3024" ph="{...}" />
+            <marker date="1464591507000" expanded="true" signature="3046:3254" ph="{...}" />
+            <marker date="1464591507000" expanded="true" signature="3119:3172" ph="{...}" />
+            <marker date="1464591507000" expanded="true" signature="3206:3252" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Question.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+          <folding>
+            <marker date="1465924862091" expanded="true" signature="92:766" ph="{...}" />
+            <marker date="1465924862091" expanded="true" signature="200:292" ph=" The attributes that should be casted to native types. ..." />
+            <marker date="1465924862091" expanded="true" signature="319:357" ph="..." />
+            <marker date="1465924862091" expanded="true" signature="372:462" ph=" Check if answer is correct. ..." />
+            <marker date="1465924862091" expanded="true" signature="505:558" ph="{...}" />
+            <marker date="1465924862091" expanded="true" signature="567:678" ph=" Returns associated user. ..." />
+            <marker date="1465924862091" expanded="true" signature="707:764" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/QuestionController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="97" column="29" selection-start-line="97" selection-start-column="29" selection-end-line="97" selection-end-column="29" />
+        <state relative-caret-position="943">
+          <caret line="86" column="28" selection-start-line="86" selection-start-column="28" selection-end-line="86" selection-end-column="28" />
           <folding>
-            <element signature="e#40#57#0#PHP" expanded="true" />
+            <marker date="1466436556942" expanded="true" signature="44:137" ph="..." />
+            <marker date="1466436556942" expanded="true" signature="182:2572" ph="{...}" />
+            <marker date="1466436556942" expanded="true" signature="192:288" ph=" Display a listing of the resource. ..." />
+            <marker date="1466436556942" expanded="true" signature="318:440" ph="{...}" />
+            <marker date="1466436556942" expanded="true" signature="449:603" ph=" Store a newly created resource in storage. ..." />
+            <marker date="1466436556942" expanded="true" signature="649:1051" ph="{...}" />
+            <marker date="1466436556942" expanded="true" signature="856:927" ph="..." />
+            <marker date="1466436556942" expanded="true" signature="1060:1177" ph=" Display the specified resource. ..." />
+            <marker date="1466436556942" expanded="true" signature="1209:1294" ph="{...}" />
+            <marker date="1466436556942" expanded="true" signature="1303:1433" ph=" Try to answer question. ..." />
+            <marker date="1466436556942" expanded="true" signature="1482:1955" ph="{...}" />
+            <marker date="1466436556942" expanded="true" signature="1655:1726" ph="..." />
+            <marker date="1466436556942" expanded="true" signature="1964:2154" ph=" Exchange points in case that question is answered. ..." />
+            <marker date="1466436556942" expanded="true" signature="2251:2570" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/TokenController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding>
+            <marker date="1465924296786" expanded="false" signature="44:118" ph="..." />
+            <marker date="1465924296786" expanded="true" signature="160:1352" ph="{...}" />
+            <marker date="1465924296786" expanded="true" signature="170:259" ph=" Handles user login. ..." />
+            <marker date="1465924296786" expanded="true" signature="302:422" ph="{...}" />
+            <marker date="1465924296786" expanded="true" signature="431:530" ph=" Handles registration process. ..." />
+            <marker date="1465924296786" expanded="true" signature="576:822" ph="{...}" />
+            <marker date="1465924296786" expanded="true" signature="831:949" ph=" Get token or error response based on credentials. ..." />
+            <marker date="1465924296786" expanded="true" signature="999:1350" ph="{...}" />
+            <marker date="1465924296786" expanded="true" signature="1019:1184" ph="..." />
+            <marker date="1465924296786" expanded="true" signature="1079:1174" ph="..." />
+            <marker date="1465924296786" expanded="true" signature="1219:1309" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="19" column="60" selection-start-line="19" selection-start-column="60" selection-end-line="19" selection-end-column="60" />
+          <folding>
+            <marker date="1466436832357" expanded="false" signature="9:390" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/FriendsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding>
+            <marker date="1466430426715" expanded="true" signature="44:106" ph="..." />
+            <marker date="1466430426715" expanded="true" signature="150:843" ph="{...}" />
+            <marker date="1466430426715" expanded="true" signature="160:244" ph=" Return friends of user. ..." />
+            <marker date="1466430426715" expanded="true" signature="278:369" ph="{...}" />
+            <marker date="1466430426715" expanded="true" signature="378:453" ph=" Add a friendship route. ..." />
+            <marker date="1466430426715" expanded="true" signature="507:841" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UsersController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="656">
+          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+          <folding>
+            <element signature="e#40#53#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

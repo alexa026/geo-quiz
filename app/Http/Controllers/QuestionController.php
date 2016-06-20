@@ -93,7 +93,7 @@ class QuestionController extends Controller
         $user_owner->decreasePoints($points);
 
         if ($user_owner->isFriendWith($user_answered->id))
-            $points *= $points;
+            $points *= 2;
 
         $user_answered->increasePoints($points);
         $question->answered = true;
