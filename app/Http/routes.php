@@ -19,6 +19,7 @@ Route::post('question/radius', 'GeoController@inRadius');
 
 Route::resource('question', 'QuestionController', ['only' => ['index', 'store', 'show']]);
 
+Route::get('user', 'UsersController@getUser');
 Route::get('user/{id}', 'UsersController@show');
 Route::get('user/{id}/friends', 'FriendsController@ofUser');
 Route::post('user/friends', 'FriendsController@addFriendship');
