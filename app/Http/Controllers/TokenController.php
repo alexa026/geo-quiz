@@ -18,8 +18,9 @@ class TokenController extends Controller
     public function login(Request $data)
     {
         $credentials = $data->only('email', 'password');
+        $user = User::where('email', $credentials['email'])->first();
 
-        return $this->processLogin($credentials);
+        return [$this->processLogin($credentials), $user];
     }
 
     /**
@@ -33,9 +34,11 @@ class TokenController extends Controller
         $user_data = $data->only('email', 'password', 'name');
         $user_data['password'] = bcrypt($user_data['password']);
 
-        User::create($user_data);
+        $id = User::create($user_data);
 
-        return $this->processLogin($data->only('email', 'password'));
+        $token = $this->processLogin($data->only('email', 'password'));
+
+        return array_merge($token, compact('id'));
     }
 
     /**
