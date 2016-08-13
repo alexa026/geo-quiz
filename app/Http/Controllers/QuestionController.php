@@ -76,7 +76,9 @@ class QuestionController extends Controller
         
         $result = $question->checkAnswer($data['answer']);
         
-        return !$result ? -1 : $this->calculatePoints($user, $question->user, $question);
+        $points = !$result ? -1 : $this->calculatePoints($user, $question->user, $question);
+
+        return compact('points');
     }
 
     /**
