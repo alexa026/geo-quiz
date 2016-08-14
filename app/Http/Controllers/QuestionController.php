@@ -34,7 +34,7 @@ class QuestionController extends Controller
     {
         $data = $request->only('question', 'latitude', 'longitude', 'points', 'answer');
 
-        $data['answer'] = strtolower('answer');
+        $data['answer'] = strtolower($data['answer']);
 
         if (!$user = JWTAuth::parseToken()->authenticate()) {
             return response()->json(['user_not_found'], 404);
