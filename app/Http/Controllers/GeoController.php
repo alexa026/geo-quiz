@@ -18,7 +18,7 @@ class GeoController extends Controller
      */
     public function inRadius(Request $request)
     {
-        $defaultRadius = 200;
+        $defaultRadius = 4000;
         $data = $request->only('lat', 'long');
 
         if (!$user = JWTAuth::parseToken()->authenticate()) 
