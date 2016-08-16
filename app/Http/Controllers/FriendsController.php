@@ -19,7 +19,7 @@ class FriendsController extends Controller
     {
         $user = User::findOrFail($id);
         
-        return $user->friends;
+        return $user->friends();
     }
 
     /**
