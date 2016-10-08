@@ -18,9 +18,9 @@ class TokenController extends Controller
     public function login(Request $data)
     {
         $credentials = $data->only('email', 'password');
-        $id = User::where('email', $credentials['email'])->first()->id;
+        $id = User::where('email', $credentials['email'])->first();
 
-        return [$this->processLogin($credentials), compact('id')];
+        return [$this->processLogin($credentials), $id];
     }
 
     /**
@@ -36,7 +36,7 @@ class TokenController extends Controller
 
         $id = User::create($user_data);
 
-        return [$this->processLogin($data->only('email', 'password')), compact('id')];
+        return [$this->processLogin($data->only('email', 'password')), $id];
     }
 
     /**

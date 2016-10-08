@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use Event;
+use App\Events\QuestionCreated;
 use App\Question;
 use App\User;
 use Illuminate\Http\Request;
@@ -43,6 +45,9 @@ class QuestionController extends Controller
         $user->decreasePoints($data['points']);
 
         $q = $user->questions()->create($data);
+
+        Event::fire(new QuestionCreated($q));
+
         return $q;
     }
 
